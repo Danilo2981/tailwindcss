@@ -11,13 +11,34 @@
     <title>Tailwind</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h2>Tailwind</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe natus vero officiis facere nostrum voluptatem adipisci, veniam quaerat culpa laudantium, doloremque dignissimos modi sapiente architecto dolorum odit. Excepturi, officiis laboriosam.</p>
-            </div>
-        </div>
+
+    {{-- Clase       Breakpoint          Propiedades
+        envase	    Ninguna	            ancho: 100%;
+                    sm ( 640 px )	    ancho máximo: 640px ;
+                    md ( 768 px )	    ancho máximo: 768px ;
+                    lg ( 1024 px )	    ancho máximo: 1024px ;
+                    xl ( 1280 px )	    ancho máximo: 1280px ;
+                    2xl ( 1536 px )	    ancho máximo: 1536px ; --}}
+                    
+    <h1>Contenedor Simple .container</h1>
+    <div class="container bg-blue-200">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique magnam natus fugit deleniti saepe dicta dolore mollitia inventore ut. Quas cum nulla at et quod quibusdam culpa eveniet enim ex.</p>
+    </div>
+    <h1>Contenedor con centrado automatico .mx-auto</h1>
+    <div class="container bg-blue-200 mx-auto">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique magnam natus fugit deleniti saepe dicta dolore mollitia inventore ut. Quas cum nulla at et quod quibusdam culpa eveniet enim ex.</p>
+    </div>
+    <h1>Contenedor con centrado automatico y padding .px-{size}</h1>
+    <div class="container bg-blue-200 mx-auto px-4">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique magnam natus fugit deleniti saepe dicta dolore mollitia inventore ut. Quas cum nulla at et quod quibusdam culpa eveniet enim ex.</p>
+    </div>
+    <h1 class>Border Box</h1>
+    <div class="box-border h-32 w-32 p-4 bg-blue-300 border-4 mx-auto">
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+    <h1>Box Content</h1>
+    <div class="box-content h-32 w-32 p-4 border-4 bg-blue-900 mx-auto">
+        <p class="text-white">Lorem ipsum dolor sit.</p>
     </div>
 </body>
 </html>
